@@ -1,0 +1,170 @@
+/* FONTS */
+@font-face {
+    font-family: "Young Serif";
+    src: url("../fonts/young-serif/YoungSerif-Regular.ttf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "OutfitVar";
+    src: url("../fonts/outfit/Outfit-VariableFont_wght.ttf") ;
+    font-weight: 100 1000;
+}
+
+@font-face {
+    font-family: 'Outfit';
+    src: url('../fonts/outfit/static/Outfit-Regular.ttf');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Outfit';
+    src: url('../fonts/outfit/static/Outfit-Bold.ttf');
+    font-weight: 700;
+}
+
+h1, h2{
+    font-family: "Young Serif", serif;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin: 1.375rem 0 .9375rem;
+    color: #312f2e;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin: 1.7rem 0 1.2rem;
+    color: #844637;
+}
+
+h3 {
+    font-size: 1.2rem;
+    margin: 0 0 .75rem;
+    color: hsl(332, 51%, 32%);
+}
+
+body {
+    font-family: OutfitVar, Outfit, sans-serif !important;
+    line-height: 1.5;
+    all: unset;
+    background-color: #f3e5d8;
+    color: #636059;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    margin-top: 0;
+}
+
+main {
+    max-width: 660px;
+    margin: clamp(0rem, 11vw, 7.7rem) auto;
+    padding: 39px;
+    background-color: #fff;
+    border-radius: 30px;
+}
+
+ul, ol {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    padding-left: 1rem;
+    margin-left: .5rem;
+}
+
+li {
+    padding-left: 16px;
+}
+
+img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+
+hr {
+    margin-top: 1.9rem;
+}
+
+table {
+    width: 100%;
+    border-spacing: 0;
+}
+
+th, td, tr {
+    border-bottom: 1px solid  hsl(30, 18%, 87%);
+    text-align: left;
+    padding: 11px 32px;
+    width: 50%;
+    font-weight: 400;
+}
+
+td {
+    padding-left: .5rem;
+    color: #844637;
+    font-weight: bold;
+}
+
+.times li::marker {
+    color: hsl(332, 51%, 32%);
+    margin-right: 32px;
+}
+
+li::marker {
+    color: hsl(14, 45%, 36%);
+}
+
+section.times {
+    background-color: hsl(330, 100%, 98%);
+    padding: 24px 32px;
+    border-radius: 15px;
+    margin-top: 2rem;
+}
+
+section.times *:first-child {
+    margin-top: 0;
+}
+
+section.times *:last-child {
+    margin-bottom: 0;
+}
+
+section.times ul {
+    margin-top: 0;
+    margin-left: 5px;
+    gap: .5rem;
+}
+
+section.ingredients ul {
+    gap: .5rem;
+    margin-left: .5rem;
+}
+
+section.instructions li::marker {
+    font-weight: bold;
+}
+
+section.nutrition p {
+    margin-bottom: .5rem;
+}
+
+@media only screen and (max-width: 660px) {
+    main {
+        margin: 0;
+        border-radius: 0;
+        padding: 0 0 2rem;
+    }
+
+    main > *:not(img) {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    img {
+        border-radius: 0;
+    }
+}
