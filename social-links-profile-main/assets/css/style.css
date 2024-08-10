@@ -1,0 +1,99 @@
+@font-face {
+    font-family: "InterVar";
+    src: url("../fonts/Inter-VariableFont_slnt,wght.ttf") format("truetype");
+    font-weight: 100 1000;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("../fonts/static/Inter-Regular.ttf") format("truetype");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("../fonts/static/Inter-SemiBold.ttf") format("truetype");
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("../fonts/static/Inter-Bold.ttf") format("truetype");
+    font-weight: 700;
+}
+
+body {
+    all: unset;
+    background-color: hsl(0, 0%, 8%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: hsl(0, 0%, 100%);
+    font-family: InterVar, Inter, sans-serif;
+    min-height: 100vh;
+    font-size: .875rem;
+}
+
+p {
+    margin-top: .5rem;
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 1.5rem;
+    margin-bottom: 0;
+    font-weight: 600;
+}
+
+.subtitle {
+    color: hsl(75, 94%, 57%);
+    font-weight: bold;
+    font-size: .875rem;
+    margin-bottom: 1.5rem;
+}
+
+main {
+    max-width: calc(23.75rem - clamp(1rem, 6vw, 2.5rem));
+    background-color: hsl(0, 0%, 12%);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    margin-top: clamp(5rem, 8vw, 7rem);
+    margin-bottom: clamp(5rem, 8vw, 7rem);
+}
+
+img.profile {
+    width: 100%;
+    border-radius: 50%;
+    max-width: 5rem;
+}
+
+.btn {
+    background-color: hsl(0, 0%, 20%);
+    border-radius: .5rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    width: 100%;
+    text-decoration: none;
+    color: white;
+    padding: .75rem 0;
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    transition: background-color .3s, color .3s;
+}
+
+.btn:hover {
+    background-color: hsl(75, 94%, 57%);
+    color: hsl(0, 0%, 20%);
+}
+
+@media only screen and (max-width: 600px) {
+    main {
+        padding: 1.5rem;
+    }
+}
