@@ -1,0 +1,109 @@
+@font-face {
+    font-family: 'FightreeVar';
+    src: url('../fonts/Figtree-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 1000;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FightreeVar';
+    src: url('../fonts/Figtree-Italic-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 1000;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Fightree';
+    src: url('../fonts/static/Figtree-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'Fightree';
+    src: url('../fonts/static/Figtree-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+}
+
+
+:root {
+    --yellow: #f4d04e;
+    --gray: #6b6b6b;
+    --dark: #111111;
+    --light: #ffffff;
+}
+
+body {
+    all: unset;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--yellow);
+    font-family: "FightreeVar", "Fightree", sans-serif;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+p, h1 {
+    margin: 0;
+}
+
+h1 {
+    font-size: 1.5rem;
+    color: var(--dark);
+}
+
+p {
+    font-size: 1rem;
+    color: var(--gray);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: calc(100% - 2* 3rem);
+    max-width: calc(24rem - 2 * 1.5rem);
+    margin: clamp(7.75rem, 14.2vw, 16.6875rem) 1.5rem;
+    background-color: var(--light);
+    padding: 1.5rem;
+    border: 1px solid var(--dark);
+    border-radius: 1.25rem;
+    box-shadow: var(--dark) .5rem .5rem 0 0;
+}
+
+.card .card-content {
+    display: flex;
+    flex-direction: column;
+    gap: .75rem;
+}
+
+.card .card-img {
+    border-radius: .625rem;
+}
+
+.card .profile img {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+}
+
+.card .profile {
+    display: flex;
+    gap: .75rem;
+    align-items: center;
+    font-weight: 800;
+    font-size: .875rem;
+}
+
+.badge {
+    background-color: var(--yellow);
+    padding: .25rem .75rem;
+    width: fit-content;
+    border-radius: .25rem;
+    font-weight: 800;
+}
+
+.date, .badge {
+    font-size: .875rem;
+}
