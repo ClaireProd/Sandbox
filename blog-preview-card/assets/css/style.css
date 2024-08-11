@@ -51,6 +51,8 @@ p, h1 {
 h1 {
     font-size: 1.5rem;
     color: var(--dark);
+    cursor: pointer;
+    transition: color .3s;
 }
 
 h1:hover {
