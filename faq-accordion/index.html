@@ -16,7 +16,7 @@
         <h1 class="card-title">FAQs</h1>
     </header>
     <div class="card-content accordion">
-        <div class="accordion-item">
+        <div class="accordion-item open">
             <button>
                 <span class="h2">What is Frontend Mentor, and how will it help me?</span>
                 <i class="icon"></i>
@@ -57,6 +57,10 @@
 
         accordionItems.forEach(item => {
             item.addEventListener('click', () => {
+                document.querySelectorAll('.accordion-item').forEach(item => {
+                    item.classList.remove('open');
+                });
+
                 item.classList.toggle('open');
             });
         });
