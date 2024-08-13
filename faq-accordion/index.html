@@ -61,7 +61,11 @@
                     item.classList.remove('open');
                 });
 
-                item.classList.toggle('open');
+                if (item.classList.contains('open')) {
+                    item.classList.remove('open');
+                } else {
+                    item.classList.add('open');
+                }
             });
         });
     });
