@@ -107,6 +107,7 @@ button {
 .accordion-item button + p {
     margin-top: .375rem;
     line-height: 1.5;
+    color: var(--purple);
 }
 
 .accordion-item.open button .icon {
